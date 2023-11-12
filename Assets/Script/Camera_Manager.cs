@@ -50,7 +50,7 @@ public class Camera_Manager : MonoBehaviour
 
         _playTime += Time.deltaTime;
 
-        if (Input.GetAxis("Mouse X") == 0f)
+        if (Input.GetAxis("Mouse X") == 0f && Input.anyKey == false)
         {
             _canPlay = true;
         }
