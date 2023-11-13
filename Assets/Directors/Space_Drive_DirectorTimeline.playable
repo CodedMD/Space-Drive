@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9079326457805881021
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+  m_Name: Markers
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!114 &-9012185096257065669
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -298,7 +321,7 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendOutDuration: 0.840935783880262
     m_MixInCurve:
       serializedVersion: 2
       m_Curve: []
@@ -339,6 +362,75 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Blend List Camera Zoom
+  - m_Version: 1
+    m_Start: 37.11666666666667
+    m_ClipIn: 0
+    m_Asset: {fileID: -7639301426994877865}
+    m_Duration: 1.68333333333333
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -8915186977069025353}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0.840935783880262
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Blend List Follow Cameras
   m_Markers:
     m_Objects: []
 --- !u!114 &-7671792551604796133
@@ -358,6 +450,22 @@ MonoBehaviour:
   m_bufferingTime: 0.1
   m_ClipProperties:
     volume: 1
+--- !u!114 &-7639301426994877865
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
+  m_Name: CinemachineShot
+  m_EditorClassIdentifier: 
+  DisplayName: 
+  VirtualCamera:
+    exposedName: 31d38977c0f117e4583daf91c8cf24d9
+    defaultValue: {fileID: 0}
 --- !u!114 &-6600600820971772334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,7 +603,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 7271253532362179150}
-    m_Duration: 37.95760245054693
+    m_Duration: 38.799999999999
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4514882557958300065}
     m_EaseInDuration: 0
@@ -607,7 +715,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -4955919443806944780}
-    m_Duration: 37.95760245054693
+    m_Duration: 38.8
     m_TimeScale: 1
     m_ParentTrack: {fileID: -2894640897456819295}
     m_EaseInDuration: 0
@@ -703,7 +811,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 4843752782702142914}
-    m_Duration: 37.95760245054693
+    m_Duration: 38.8
     m_TimeScale: 1
     m_ParentTrack: {fileID: -1620070403864591244}
     m_EaseInDuration: 0
@@ -795,12 +903,12 @@ MonoBehaviour:
   - {fileID: -1620070403864591244}
   - {fileID: -4707509774132384212}
   - {fileID: -2894640897456819295}
-  m_FixedDuration: 34.95
+  m_FixedDuration: 37.96666666666667
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
   m_DurationMode: 0
-  m_MarkerTrack: {fileID: 0}
+  m_MarkerTrack: {fileID: -9079326457805881021}
 --- !u!114 &246863845158337730
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class Camera_Manager : MonoBehaviour
 {
     [SerializeField] private PlayableDirector _director;
+    [SerializeField] private GameObject _uiDisplay;
+
     [SerializeField] private GameObject[] _vCams;
     bool _canPlay = false;
     private int _currentCam;
@@ -18,7 +21,7 @@ public class Camera_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        _uiDisplay.SetActive(true);
         _vCams[0].GetComponent<CinemachineVirtualCamera>().Priority = 15;
 
     }
@@ -45,7 +48,7 @@ public class Camera_Manager : MonoBehaviour
     }
 
 
-    private void DirectorControls()
+    public void DirectorControls()
     {
 
         _playTime += Time.deltaTime;
@@ -62,10 +65,12 @@ public class Camera_Manager : MonoBehaviour
 
         if ( _canPlay && _playTime >= 5.0f)
         {
+            _uiDisplay.SetActive(false);
             _director.Play();
         }
         else if( !_canPlay)
         {
+            _uiDisplay.SetActive(true);
             _director.Stop();
             _playTime = 0;  
         }
